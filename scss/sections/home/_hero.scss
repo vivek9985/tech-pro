@@ -1,0 +1,190 @@
+@use "../../abstract" as *;
+
+.hero-section {
+    width: 100%;
+    max-width: 1600px;
+    margin: auto;
+    padding: 50px 0 0 0;
+    background-color: $primary-bg;
+    .hero-container {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        .left-column, .right-column {
+            width: 50%;
+        }
+        .left-column {
+            .welcome-text {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                div {
+                    width: 24px;
+                    height: 2px;
+                    background-color: $blue;
+                }
+                p {
+                    @include text-18();
+                    color: $primary;
+                }
+            }
+            h2 {
+                @include heading-64 ();
+                margin: 20px 0;
+                color: $primary;
+            }
+            .description-text {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin: 10px 0 30px 0;
+                div {
+                    width: 3px;
+                    height: 51px;
+                    background-color: $blue;
+                }
+                p {
+                    @include text-20();
+                    color: $dark-grey;
+                }
+            }
+            .get-started-btn {
+                @include btn ($secondary, $white);
+                background-color: $secondary;
+                &:hover {
+                    background-color: $primary;
+                    color: $white;
+                    border-color: $border-grey;
+                }
+            }
+            .learn-more-btn {
+                @include btn ($white, $primary);
+                margin-left: 10px;
+                border-color: $border-grey;
+                &:hover {
+                    background-color: $primary;
+                    color: $white;
+                }
+            }
+            .number-container {
+                display: flex;
+                align-items: center; 
+                margin-top: 50px;
+                gap: 40px;
+                div {
+                   padding: 10px 40px 10px 0;
+                   position: relative;
+                   &::after {
+                        content: "";
+                        width: 1px;
+                        height: 36px;
+                        border-radius: 10px;
+                        background-color: $border-grey;
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        bottom: 0;
+                        margin: auto;
+                   }
+                }
+                .review {
+                    &::after {
+                        content: "";
+                        width: 0px;
+                   }
+                }
+                div h3 {
+                    @include heading-32 ();
+                    color: $primary;
+                }
+                div p {
+                    @include text-16 ();
+                    color: $dark-grey;
+                }
+            }
+        } 
+        .right-column {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .right-column-content {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                .triangle {
+                    position: absolute;
+                    top: 100px;
+                    left: 150px;
+                }
+                .two-circle {
+                    position: absolute;
+                    top: 60px;
+                    right: 50px;
+                }
+                .circle-blue {
+                    position: absolute;
+                    left: 100px;
+                }
+                .man {
+                    width: 80%;
+                    object-fit: cover;
+                }
+                .user-container {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    padding: 12px;
+                    background-color: $white;
+                    border-radius: 8px;
+                    position: absolute;
+                    top: 30%;
+                    left: 20px;
+                    .user-profiles {
+                        img {
+                            width: 35px;
+                            height: 35px;
+                            border-radius: 50%;
+                        }
+                        .second-user {
+                            margin-left: -20px;
+                        }
+                        .third-user {
+                            margin-left: -20px;
+                        }
+                        ph3 {
+                            @include text-18 ();
+                        }
+                        p {
+                            @include text-16 ();
+                            color: $dark-grey;
+                        }
+                    }
+                }
+                .circle-text-container {
+                    width: 120px;
+                    height: 120px;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: $snow-drift;
+                    position: absolute;
+                    bottom: 90px;
+                    right: 70px;
+                    .circle-text {
+                        width: 100px;
+                        height: 100px;
+                    }
+                    .star {
+                        width: 35px;
+                        height: 35px;
+                        position: absolute;
+                    }
+                }
+            }
+        }
+    }
+}

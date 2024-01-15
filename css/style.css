@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap");
+/*========TEXT===========*/
+/*========BUTTON===========*/
+:root {
+  --primary: #2B2B2B;
+  --secondary: #F84C03;
+  --primary-bg: #ffffff;
+  --secondary-bg: #F9F9F9;
+  --dodger-blue: #377DFF;
+  --text-grey-dark: #555555;
+  --text-grey-light: #CFCFD1;
+  --border-grey: #D5D5D5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Readex Pro", sans-serif;
+}
+
+.hero-section {
+  width: 100%;
+  max-width: 1600px;
+  margin: auto;
+  padding: 50px 0 0 0;
+  background-color: #ffffff;
+}
+.hero-section .hero-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.hero-section .hero-container .left-column, .hero-section .hero-container .right-column {
+  width: 50%;
+}
+.hero-section .hero-container .left-column .welcome-text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.hero-section .hero-container .left-column .welcome-text div {
+  width: 24px;
+  height: 2px;
+  background-color: var(--dodger-blue);
+}
+.hero-section .hero-container .left-column .welcome-text p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.77em;
+  letter-spacing: -0.008em;
+  color: var(--primary);
+}
+.hero-section .hero-container .left-column h2 {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.12em;
+  letter-spacing: -0.02em;
+  margin: 20px 0;
+  color: var(--primary);
+}
+.hero-section .hero-container .left-column .description-text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0 30px 0;
+}
+.hero-section .hero-container .left-column .description-text div {
+  width: 3px;
+  height: 51px;
+  background-color: var(--dodger-blue);
+}
+.hero-section .hero-container .left-column .description-text p {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.8em;
+  letter-spacing: -0.01em;
+  color: var(--text-hex);
+}
+.hero-section .hero-container .left-column .get-started-btn {
+  padding: 17px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  transition: all 0.4s;
+  background-color: var(--secondary);
+}
+.hero-section .hero-container .left-column .get-started-btn:hover {
+  background-color: var(--primary);
+  color: var(--primary-bg);
+  border-color: var(--border-grey);
+}
+.hero-section .hero-container .left-column .learn-more-btn {
+  padding: 17px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  transition: all 0.4s;
+  margin-left: 10px;
+  border-color: var(--border-grey);
+}
+.hero-section .hero-container .left-column .learn-more-btn:hover {
+  background-color: var(--primary);
+  color: var(--primary-bg);
+}
+.hero-section .hero-container .left-column .number-container {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  gap: 40px;
+}
+.hero-section .hero-container .left-column .number-container div {
+  padding: 10px 40px 10px 0;
+  position: relative;
+}
+.hero-section .hero-container .left-column .number-container div::after {
+  content: "";
+  width: 1px;
+  height: 36px;
+  border-radius: 10px;
+  background-color: var(--border-grey);
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.hero-section .hero-container .left-column .number-container .review::after {
+  content: "";
+  width: 0px;
+}
+.hero-section .hero-container .left-column .number-container div h3 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.25em;
+  color: var(--primary);
+}
+.hero-section .hero-container .left-column .number-container div p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.75em;
+  letter-spacing: -0.005em;
+  color: var(--text-hex);
+}
+.hero-section .hero-container .right-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-section .hero-container .right-column .right-column-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.hero-section .hero-container .right-column .right-column-content .triangle {
+  position: absolute;
+  top: 100px;
+  left: 150px;
+}
+.hero-section .hero-container .right-column .right-column-content .two-circle {
+  position: absolute;
+  top: 60px;
+  right: 50px;
+}
+.hero-section .hero-container .right-column .right-column-content .circle-blue {
+  position: absolute;
+  left: 100px;
+}
+.hero-section .hero-container .right-column .right-column-content .man {
+  width: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.hero-section .hero-container .right-column .right-column-content .user-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  background-color: var(--primary-bg);
+  border-radius: 8px;
+  position: absolute;
+  top: 30%;
+  left: 20px;
+}
+.hero-section .hero-container .right-column .right-column-content .user-container .user-profiles img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+.hero-section .hero-container .right-column .right-column-content .user-container .user-profiles .second-user {
+  margin-left: -20px;
+}
+.hero-section .hero-container .right-column .right-column-content .user-container .user-profiles .third-user {
+  margin-left: -20px;
+}
+.hero-section .hero-container .right-column .right-column-content .user-container .user-profiles ph3 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.77em;
+  letter-spacing: -0.008em;
+}
+.hero-section .hero-container .right-column .right-column-content .user-container .user-profiles p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.75em;
+  letter-spacing: -0.005em;
+  color: var(--text-hex);
+}
+.hero-section .hero-container .right-column .right-column-content .circle-text-container {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary-bg);
+  position: absolute;
+  bottom: 90px;
+  right: 70px;
+}
+.hero-section .hero-container .right-column .right-column-content .circle-text-container .circle-text {
+  width: 100px;
+  height: 100px;
+}
+.hero-section .hero-container .right-column .right-column-content .circle-text-container .star {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+}/*# sourceMappingURL=style.css.map */

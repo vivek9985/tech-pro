@@ -1,0 +1,60 @@
+/*========TEXT===========*/
+@mixin heading-64 ($size: 64px, $weight: 700, $height: 1.12em, $spacing: -0.02em) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $height;
+    letter-spacing: $spacing;
+}
+@mixin heading-44 ($size: 44px, $weight: 600, $height: 1.12em, $spacing: -0.02em) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $height;
+    letter-spacing: $spacing;
+}
+@mixin heading-40 ($size: 40px, $weight: 700, $height: 1.2em) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $height;
+}
+@mixin heading-32 ($size: 32px, $weight: 700, $height: 1.25em, $spacing: -0.015em) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $height;
+}
+@mixin text-24 ($size: 24px, $weight: 500, $height: 1.33em, $spacing: -0.01em) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $height;
+    letter-spacing: $spacing;
+}
+@mixin text-20 ($size: 20px, $weight: 300, $height: 1.8em, $spacing: -0.01em) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $height;
+    letter-spacing: $spacing;
+}
+@mixin text-18 ($size: 18px, $weight: 400, $height: 1.77em, $spacing: -0.008em) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $height;
+    letter-spacing: $spacing;
+
+}
+@mixin text-16 ($size: 16px, $weight: 300, $height: 1.75em, $spacing: -0.005em) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $height;
+    letter-spacing: $spacing;
+}
+
+
+/*========BUTTON===========*/
+@mixin btn ($bg-color, $text-color) {
+    padding: 17px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    transition: all .4s;
+}

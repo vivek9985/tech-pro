@@ -1,0 +1,22 @@
+@use "../abstract/" as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --primary: #{$primary-hex};
+    --secondary: #{$secondary-hex};
+    --primary-bg: #{$primary-bg};
+    --secondary-bg: #{$secondary-bg};
+    --dodger-blue: #{$icon-blue};
+    --text-grey-dark: #{$text-hex};
+    --text-grey-light: #{$secondary-text};
+    --border-grey: #{$border-hex};
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Readex Pro', sans-serif;
+}
