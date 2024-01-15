@@ -180,10 +180,22 @@ body {
   left: 300px;
   bottom: 50px;
 }
+.hero-section .hero-container .right-column .right-column-content .line-circle-one {
+  position: absolute;
+  top: 180px;
+  right: 0px;
+}
+.hero-section .hero-container .right-column .right-column-content .line-circle-two {
+  position: absolute;
+  left: 150px;
+  bottom: 120px;
+  z-index: 5;
+}
 .hero-section .hero-container .right-column .right-column-content .man {
   width: 80%;
   -o-object-fit: cover;
      object-fit: cover;
+  z-index: 1;
 }
 .hero-section .hero-container .right-column .right-column-content .user-container {
   display: flex;

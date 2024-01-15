@@ -133,9 +133,21 @@
                     left: 300px;
                     bottom: 50px;
                 }
+                .line-circle-one {
+                    position: absolute;
+                    top: 180px;
+                    right: 0px;
+                }
+                .line-circle-two {
+                    position: absolute;
+                    left: 150px;
+                    bottom: 120px;
+                    z-index: 5;
+                }
                 .man {
                     width: 80%;
                     object-fit: cover;
+                    z-index: 1;
                 }
                 .user-container {
                     display: flex;
