@@ -175,6 +175,11 @@ body {
   position: absolute;
   left: 100px;
 }
+.hero-section .hero-container .right-column .right-column-content .circle-orange {
+  position: absolute;
+  left: 300px;
+  bottom: 50px;
+}
 .hero-section .hero-container .right-column .right-column-content .man {
   width: 80%;
   -o-object-fit: cover;
