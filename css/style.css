@@ -88,10 +88,12 @@ body {
   padding: 17px 30px;
   font-size: 16px;
   font-weight: 600;
+  color: var(--primary-bg);
   cursor: pointer;
   border: 1px solid transparent;
   border-radius: 8px;
   transition: all 0.4s;
+  background-color: var(--secondary);
   background-color: var(--secondary);
 }
 .hero-section .hero-container .left-column .get-started-btn:hover {
@@ -103,10 +105,12 @@ body {
   padding: 17px 30px;
   font-size: 16px;
   font-weight: 600;
+  color: var(--primary);
   cursor: pointer;
   border: 1px solid transparent;
   border-radius: 8px;
   transition: all 0.4s;
+  background-color: var(--primary-bg);
   margin-left: 10px;
   border-color: var(--border-grey);
 }
@@ -351,6 +355,10 @@ body {
   margin: auto;
   margin-top: 70px;
 }
+.choose-us-section img {
+  width: 100%;
+  height: 100%;
+}
 .choose-us-section div {
   width: 85%;
   margin: auto;
@@ -369,7 +377,81 @@ body {
   letter-spacing: -0.008em;
   margin: 20px 0 50px 0;
 }
-.choose-us-section img {
+.choose-us-section ul {
+  width: 85%;
+  margin: auto;
+  margin-bottom: 100px;
+  padding-left: 35px;
+}
+.choose-us-section ul li {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.75em;
+  letter-spacing: -0.005em;
+  margin-bottom: 20px;
+}
+.choose-us-section ul li span {
+  font-weight: 500;
+}
+
+.all-service-section {
+  width: 80%;
+  margin: auto;
+  padding: 40px 0 65px 0;
+  margin-bottom: 100px;
+  border-radius: 12px;
+  background-color: var(--primary-bg);
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+.all-service-section h2 {
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 1.12em;
+  letter-spacing: -0.02em;
+  width: 60%;
+  margin: 25px auto 50px auto;
+  z-index: 3;
+}
+.all-service-section button {
+  padding: 17px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--primary-bg);
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  transition: all 0.4s;
+  background-color: var(--secondary);
+}
+.all-service-section button:hover {
+  transform: scale(1.1);
+  background-color: var(--primary);
+}
+.all-service-section .three-icons-container {
+  width: 200px;
+  position: absolute;
+  transform: rotate(5deg);
+  z-index: 1;
+  top: -4%;
+  left: -7%;
+}
+.all-service-section .three-icons-container .three-icons {
+  display: flex;
+}
+.all-service-section .three-icons-container .three-icons img {
   width: 100%;
   height: 100%;
+}
+.all-service-section .three-icons-container .second-icon {
+  margin-left: -75%;
+}
+.all-service-section .three-icons-container .third-icon {
+  margin-left: -75%;
+}
+.all-service-section .spring-icon {
+  position: absolute;
+  bottom: 20%;
+  right: 7%;
 }/*# sourceMappingURL=style.css.map */
