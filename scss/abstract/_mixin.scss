@@ -33,7 +33,7 @@
     line-height: $height;
     letter-spacing: $spacing;
 }
-@mixin text-18 ($size: 18px, $weight: 400, $height: 1.77em, $spacing: -0.008em) {
+@mixin text-18 ($size: 18px, $weight: 300, $height: 1.77em, $spacing: -0.008em) {
     font-size: $size;
     font-weight: $weight;
     line-height: $height;

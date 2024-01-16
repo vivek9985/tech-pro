@@ -28,6 +28,7 @@
                 p {
                     @include text-18();
                     color: $primary;
+                    margin-top: 14px;
                 }
             }
             h2 {
@@ -48,6 +49,7 @@
                 p {
                     @include text-20();
                     color: $dark-grey;
+                    margin-top: 14px;
                 }
             }
             .get-started-btn {
@@ -147,7 +149,6 @@
                 .man {
                     width: 80%;
                     object-fit: cover;
-                    z-index: 1;
                 }
                 .user-container {
                     display: flex;
