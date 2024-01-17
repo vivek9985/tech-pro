@@ -22,6 +22,47 @@ body {
   font-family: "Readex Pro", sans-serif;
 }
 
+.container,
+.container-fluid {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1344px;
+  }
+}
 .hero-section {
   width: 100%;
   max-width: 1600px;
@@ -64,6 +105,16 @@ body {
   letter-spacing: -0.02em;
   margin: 20px 0;
   color: var(--primary);
+}
+@media (max-width: 992px) {
+  .hero-section .hero-container .left-column h2 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .hero-section .hero-container .left-column h2 {
+    font-size: 35px;
+  }
 }
 .hero-section .hero-container .left-column .description-text {
   display: flex;
@@ -264,26 +315,29 @@ body {
   background-color: #E5F1FF;
 }
 .service-details-banner-section .service-details-banner-container {
-  width: 80%;
   margin: auto;
   padding: 100px 0;
   text-align: center;
   position: relative;
 }
-.service-details-banner-section .service-details-banner-container .service-details-text {
+.service-details-banner-section .service-details-banner-container .service-details-text p {
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.77em;
   letter-spacing: -0.008em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
+  display: inline;
+  position: relative;
 }
-.service-details-banner-section .service-details-banner-container .service-details-text div {
+.service-details-banner-section .service-details-banner-container .service-details-text p::before {
+  content: "";
   width: 25px;
   height: 2px;
   background-color: var(--light-blue);
+  position: absolute;
+  left: -30%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
 .service-details-banner-section .service-details-banner-container h2 {
   font-size: 64px;
@@ -292,6 +346,16 @@ body {
   letter-spacing: -0.02em;
   color: var(--primary);
   margin: 20px 0;
+}
+@media (max-width: 992px) {
+  .service-details-banner-section .service-details-banner-container h2 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .service-details-banner-section .service-details-banner-container h2 {
+    font-size: 35px;
+  }
 }
 .service-details-banner-section .service-details-banner-container .service-details-description {
   font-size: 20px;
@@ -323,12 +387,10 @@ body {
 }
 
 .support-service-section {
-  width: 75%;
   margin: auto;
   margin-top: 70px;
 }
 .support-service-section div {
-  width: 85%;
   margin: auto;
 }
 .support-service-section div h2 {
@@ -337,6 +399,11 @@ body {
   line-height: 1.2em;
   color: var(--primary);
   margin-top: 50px;
+}
+@media (max-width: 768px) {
+  .support-service-section div h2 {
+    font-size: 27px;
+  }
 }
 .support-service-section div p {
   font-size: 18px;
@@ -351,7 +418,6 @@ body {
 }
 
 .choose-us-section {
-  width: 75%;
   margin: auto;
   margin-top: 70px;
 }
@@ -360,7 +426,6 @@ body {
   height: 100%;
 }
 .choose-us-section div {
-  width: 85%;
   margin: auto;
 }
 .choose-us-section div h2 {
@@ -370,6 +435,11 @@ body {
   color: var(--primary);
   margin-top: 50px;
 }
+@media (max-width: 768px) {
+  .choose-us-section div h2 {
+    font-size: 27px;
+  }
+}
 .choose-us-section div p {
   font-size: 18px;
   font-weight: 300;
@@ -378,7 +448,6 @@ body {
   margin: 20px 0 50px 0;
 }
 .choose-us-section ul {
-  width: 85%;
   margin: auto;
   margin-bottom: 100px;
   padding-left: 35px;
@@ -395,12 +464,11 @@ body {
 }
 
 .all-service-section {
-  width: 80%;
   margin: auto;
   padding: 40px 0 65px 0;
   margin-bottom: 100px;
   border-radius: 12px;
-  background-color: var(--primary-bg);
+  background-color: #E5F1FF;
   text-align: center;
   overflow: hidden;
   position: relative;
@@ -413,6 +481,11 @@ body {
   width: 60%;
   margin: 25px auto 50px auto;
   z-index: 3;
+}
+@media (max-width: 768px) {
+  .all-service-section h2 {
+    font-size: 30px;
+  }
 }
 .all-service-section button {
   padding: 17px 30px;

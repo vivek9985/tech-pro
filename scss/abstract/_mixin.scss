@@ -4,17 +4,30 @@
     font-weight: $weight;
     line-height: $height;
     letter-spacing: $spacing;
+    @media (max-width: 992px) {
+        font-size: 40px;
+    }
+    @media (max-width: 768px) {
+        font-size: 35px;
+    }
+   
 }
 @mixin heading-44 ($size: 44px, $weight: 600, $height: 1.12em, $spacing: -0.02em) {
     font-size: $size;
     font-weight: $weight;
     line-height: $height;
     letter-spacing: $spacing;
+    @media (max-width: 768px) {
+        font-size: 30px;
+    }
 }
 @mixin heading-40 ($size: 40px, $weight: 700, $height: 1.2em) {
     font-size: $size;
     font-weight: $weight;
     line-height: $height;
+    @media (max-width: 768px) {
+        font-size: 27px;
+    }
 }
 @mixin heading-32 ($size: 32px, $weight: 700, $height: 1.25em, $spacing: -0.015em) {
     font-size: $size;
